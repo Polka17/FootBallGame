@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FootballGame
 {
-    //The strict coach, who inherits class Person, but in the game is he Devil...
+    //The strict coach, who inherits class Person, but in the game is the Devil...
     public class Coach : Person
     {
     }

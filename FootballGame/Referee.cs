@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FootballGame
 {
-    //The blind referee, because...come on how can they not see penalty situations :<
+    //The blind referee, because...come on how can they not see the penalty situations :<
     public class Referee : Person
     {
     }

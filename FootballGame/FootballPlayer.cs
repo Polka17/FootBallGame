@@ -18,13 +18,13 @@ namespace FootballGame
             get { return number; }
             set
             {
-                if (number <= 0)
+                if (number >= 0)
                 {
-                    throw new ArgumentException("Are you for real giving someome a negarive jersey number, fella?");
+                    number = value;
                 }
                 else
                 {
-                    number = value;
+                    throw new ArgumentException("Are you for real giving someome a negarive jersey number, fella?");
                 }
             }
         }
@@ -33,15 +33,22 @@ namespace FootballGame
             get { return height; }
             set
             {
-                if (height <= 140 || height > 210)
-                {
-                    throw new ArgumentException("Little shrimp or ginormious dinosaur!!!!");
-                }
-                else
+                if (height > 140 || height < 210)
                 {
                     height = value;
                 }
+                else
+                {
+                    throw new ArgumentException("Little shrimp or ginormious dinosaur!!!!");
+                }
             }
+        }
+        public void EnterPlayerInfo()
+        {
+            Console.WriteLine("Enter the number:");
+            Number = int.Parse(Console.ReadLine()); 
+            Console.WriteLine("Enter the height:");
+            Height = double.Parse(Console.ReadLine());
         }
     }
 }

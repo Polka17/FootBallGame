@@ -19,11 +19,11 @@ namespace FootballGame
             {
                 if (string.IsNullOrEmpty(name))
                 {
-                    throw new ArgumentException("A name should be written");
+                    name = value;
                 }
                 else
                 {
-                    name = value;
+                    throw new ArgumentException("A name should be written");
                 }
             }
         }
@@ -32,15 +32,22 @@ namespace FootballGame
             get { return age; }
             set
             {
-                if(age < 12 || age > 45)
-                {
-                    throw new ArgumentException("Either too young or unbelievebly old to play :(");
-                }
-                else
+                if(age > 12 || age < 45)
                 {
                     age = value;
                 }
+                else
+                {
+                    throw new ArgumentException("Either too young or unbelievebly old to play :(");
+                }
             }
+        }
+        public void EnterPersonInfo()
+        {
+            Console.WriteLine("Enter the name:");
+            Name = Console.ReadLine();
+            Console.WriteLine("Enter the age:");
+            Age = int.Parse(Console.ReadLine());
         }
     }
 }
