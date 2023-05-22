@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "o4vwqBCAlxI/48xeGX4ZHevJQZceG8zh3MJBE83/+xW3WhDwqyRstKyIRH7LNzJd5i63bZJinmn/BcBtl7DKeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Poli_\\source\\repos\\FootballGame_Project\\FootballGame\\FootballGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Poli_\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Poli_\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Poli_\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\Poli_\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
